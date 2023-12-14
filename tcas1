@@ -1,0 +1,20 @@
+echo script type: R 
+MinGW32-make build 
+.\tcas  607 0 0 3707  320 5543 0  639  639 1 1 1     > .\outputs\t491
+MinGW32-make coverage 
+echo ">>>>>>>>running test 514"
+.\tcas 681 1 0 614 482 0 0 707 757 0 2 0     > .\outputs\t514
+echo "Coverage: 81.82"
+MinGW32-make coverage
+echo ">>>>>>>>running test 1288"
+.\tcas 634 1 1 433 400 634 0 345 500 0 1 1     > .\outputs\t1288
+echo "Coverage: 83.33"
+MinGW32-make coverage
+echo ">>>>>>>>running test 1175"
+.\tcas 934 1 0 533 30 545 3 565 421 0 0 1     > .\outputs\t1175
+echo "Coverage: 87.88"
+MinGW32-make coverage
+echo ">>>>>>>>running test 1604"
+.\tcas 1078 1 1 567 655 0 906 0 1 1     > .\outputs\t1604
+echo "Coverage: 98.48"
+MinGW32-make coverage
